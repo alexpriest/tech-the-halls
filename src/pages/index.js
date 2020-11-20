@@ -4,9 +4,10 @@ import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 
 import Header from '@sections/Header';
+import Fundraiser from '@sections/Fundraiser';
+import Donate from '@sections/Donate';
 import About from '@sections/About';
-import Brands from '@sections/Brands';
-import Team from '@sections/Team';
+import Contact from '@sections/Contact';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
@@ -14,9 +15,10 @@ const IndexPage = () => (
   <Layout>
     <Navbar />
     <Header />
+    <Fundraiser />
+    <Donate />
     <About />
-    <Brands />
-    <Team />
+    <Contact />
     <Faq />
     <Footer />
   </Layout>

@@ -33,11 +33,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Tech the Halls`,
+        short_name: `tech-the-halls`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#bee5f1`,
+        theme_color: `#bee5f1`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },

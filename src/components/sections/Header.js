@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Header = () => (
   <StaticQuery
@@ -31,17 +32,15 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Support Marfa
                 <br />
-                every way
-                <br />
-                that matters
+                Public Schools
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
+                <StyledAnchorLink href="#donate">
+                  Donate to the 2020 technology fund &nbsp;&#x2794;
+                </StyledAnchorLink>
               </p>
             </Text>
           </Grid>
@@ -98,7 +97,7 @@ const Text = styled.div`
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
+const StyledAnchorLink = styled(AnchorLink)`
   color: inherit;
   text-decoration: none;
 
