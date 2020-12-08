@@ -8,7 +8,6 @@ import Fundraiser from '@sections/Fundraiser';
 import Donate from '@sections/Donate';
 import About from '@sections/About';
 import Contact from '@sections/Contact';
-import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
@@ -19,7 +18,6 @@ const IndexPage = () => (
     <Donate />
     <About />
     <Contact />
-    <Faq />
     <Footer />
   </Layout>
 );

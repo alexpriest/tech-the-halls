@@ -2,13 +2,21 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  description: 'Tech the Halls',
+  title: 'Tech the Halls',
+  url: 'techthehallsmarfa.com',
+  author: 'alexpriest',
+  keywords: [
+    'narfa',
+    'tech',
+    'schools',
+    'fundraiser',
+    'tech the halls',
+    'technology',
+    'education',
+  ],
   img: '',
-  twitterId: '@ajayns_',
+  twitterId: '',
   facebookId: '',
 };
 

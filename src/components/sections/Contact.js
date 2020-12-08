@@ -1,7 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const UsedBy = () => (
   <StaticQuery
@@ -20,18 +22,17 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="contact" accent="secondary">
         <Container style={{ position: 'relative' }}>
           <div>
-            <h2 style={{ margin: '0 0 1rem 0' }}>About Marfa Schools</h2>
+            <h2 style={{ margin: '0 0 1rem 0' }}>Contact</h2>
             <p>
-              Marfa Schools is a 1A school district with 289 students and 61
-              faculty and staff members on the PK-12th Grade campus. Marfa
-              Schools is the second largest school district in Texas in terms of
-              landmass, spanning more than 3,000 square miles of Presidio County
-              and stretching as far south as the banks of the Rio Grande.
-              Eighty-four percent of the student body is economically
-              disadvantaged.
+              For more information, please contact the Marfa I.S.D. Parent
+              Teacher Organization at{' '}
+              <StyledExternalLink href="mailto:PTOMarfa@gmail.com">
+                PTOMarfa@gmail.com
+              </StyledExternalLink>
+              .
             </p>
           </div>
         </Container>
@@ -39,5 +40,14 @@ const UsedBy = () => (
     )}
   />
 );
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
+  }
+`;
 
 export default UsedBy;
